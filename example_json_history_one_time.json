@@ -1,0 +1,85 @@
+Hello, World!
+This is a sample Python script.
+Goodbye, World!
+Full URL: http://drdr.local.:8080/api?mode=history&start=0&limit=1&output=json&apikey=c2e5eb4c6b3e4a05a34c4beb9d2aaab0
+Response Data: {
+  "history": {
+    "total_size": "108.6 G",
+    "month_size": "97.0 G",
+    "week_size": "36.5 G",
+    "day_size": "0",
+    "slots": [
+      {
+        "completed": 1774392200,
+        "name": "reftestnzb_3GB_2026-03-24",
+        "nzb_name": "reftestnzb_3GB_2026-03-24.nzb",
+        "category": "*",
+        "pp": "D",
+        "script": "None",
+        "report": "",
+        "url": null,
+        "status": "Completed",
+        "nzo_id": "SABnzbd_nzo_q7xb5rg1",
+        "storage": "/home/sander/Downloads/complete/reftestnzb_3GB_2026-03-24.5/reftestnzb_3GB_2026-03-24.bin",
+        "path": "/home/sander/Downloads/incomplete/reftestnzb_3GB_2026-03-24",
+        "script_line": "",
+        "download_time": 599,
+        "postproc_time": 0,
+        "stage_log": [
+          {
+            "name": "Source",
+            "actions": [
+              "reftestnzb_3GB_2026-03-24.nzb"
+            ]
+          },
+          {
+            "name": "Download",
+            "actions": [
+              "Downloaded in 9 mins 59 seconds at an average of 5.3 MB/s<br/>Age: 1h"
+            ]
+          },
+          {
+            "name": "Servers",
+            "actions": [
+              "news.iad.newshosting.com=3.1 GB"
+            ]
+          },
+          {
+            "name": "Repair",
+            "actions": [
+              "[par-files] Quick Check OK",
+              "Trying RAR renamer"
+            ]
+          },
+          {
+            "name": "Deobfuscate",
+            "actions": [
+              "Deobfuscate renamed 1 file(s)"
+            ]
+          }
+        ],
+        "downloaded": 3329854724,
+        "completeness": null,
+        "fail_message": "",
+        "url_info": "",
+        "bytes": 3329854724,
+        "meta": null,
+        "series": null,
+        "md5sum": "c9a27de34e3849bb35396a53e6a8d590",
+        "password": null,
+        "duplicate_key": "reftestnzb/2026/3/24",
+        "archive": false,
+        "time_added": 1774391597,
+        "size": "3.1 GB",
+        "action_line": "",
+        "loaded": false,
+        "retry": false
+      }
+    ],
+    "ppslots": 0,
+    "noofslots": 35,
+    "last_history_update": 42,
+    "version": "5.0.0Beta4"
+  }
+}
+No data found in response.
