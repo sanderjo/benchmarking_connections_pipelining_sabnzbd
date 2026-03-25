@@ -1,0 +1,2 @@
+# benchmarking_connections_pipelining_sabnzbd
+Benchmarking of Conncetions and Pipelining in SABnzbd
