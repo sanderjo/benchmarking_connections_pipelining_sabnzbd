@@ -1,0 +1,85 @@
+{
+  "history": {
+    "total_size": "814.2 G",
+    "month_size": "41.9 G",
+    "week_size": "14.3 G",
+    "day_size": "2.2 G",
+    "slots": [
+      {
+        "completed": 1774615231,
+        "name": "test_download_1000MB",
+        "nzb_name": "test_download_1000MB.nzb",
+        "category": "*",
+        "pp": "D",
+        "script": "None",
+        "report": "",
+        "url": null,
+        "status": "Completed",
+        "nzo_id": "SABnzbd_nzo__z6a3g5r",
+        "storage": "/media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.9",
+        "path": "/media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/incomplete/test_download_1000MB",
+        "script_line": "",
+        "download_time": 93,
+        "postproc_time": 4,
+        "stage_log": [
+          {
+            "name": "Source",
+            "actions": [
+              "test_download_1000MB.nzb"
+            ]
+          },
+          {
+            "name": "Download",
+            "actions": [
+              "Downloaded in 1 min 33 seconds at an average of 10.6 MB/s<br/>Age: 125d"
+            ]
+          },
+          {
+            "name": "Servers",
+            "actions": [
+              "news.newshosting.com=991.5 MB"
+            ]
+          },
+          {
+            "name": "Repair",
+            "actions": [
+              "[par-files] Quick Check OK"
+            ]
+          },
+          {
+            "name": "Unpack",
+            "actions": [
+              "[rar-files] Direct Unpack - Unpacked 2 files/folders in 16 seconds"
+            ]
+          },
+          {
+            "name": "Deobfuscate",
+            "actions": [
+              "Deobfuscate renamed 2 file(s)"
+            ]
+          }
+        ],
+        "downloaded": 1039613074,
+        "completeness": null,
+        "fail_message": "",
+        "url_info": "",
+        "bytes": 1039613074,
+        "meta": null,
+        "series": null,
+        "md5sum": "c4cd6e21b50c0ecc1476352df8bd8778",
+        "password": null,
+        "duplicate_key": null,
+        "archive": false,
+        "time_added": 1774615132,
+        "size": "991.5 MB",
+        "action_line": "",
+        "loaded": false,
+        "retry": false
+      }
+    ],
+    "ppslots": 0,
+    "noofslots": 1015,
+    "last_history_update": 136,
+    "version": "5.0.0Beta4"
+  }
+}

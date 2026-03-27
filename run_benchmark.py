@@ -1,4 +1,4 @@
-#!/usr/vin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import os
@@ -7,29 +7,142 @@ import time
 import json
 import re
 from timeit import main
-import requests
 
-base = "http://drdr.local.:8080/api?"
-apikey = "c2e5eb4c6b3e4a05a34c4beb9d2aaab0"
+import requests
 
 base = "http://localhost:8080/api?"
 apikey= "3aa5b2faa7874d75a7fd3059f351d595"
 
+# #base = "http://111.168.1.111:8080/api?"
+# apikey = "3aa5"
+URL = f"{base}apikey={apikey}"
 
+def generic_api_request(params):
+    try:
+        response = requests.get(URL, params=params, timeout=5)
+        data = response.json()
+        return data
+    except Exception as e:
+        print(f"Failed to get stats: {e}")
+        return None
+    
+def check_connection_and_apikey():
+    params = {
+        'mode': 'get_config',
+    }
+    data = generic_api_request(params)
+    print(f"API Response: {data}")
+    if data and "config" in data:
+        print("API key is valid.")
+    else:
+        print("API key is invalid or there was an error.")
+
+
+def get_mbleft():
+    params = {
+        'mode': 'queue',
+    }
+    data = generic_api_request(params)
+    if data:
+        mbleft = data["queue"]["mbleft"]
+    else:
+        return None
+    return float(mbleft)
+
+def get_enabled_servers():
+    # mode=get_config&section=servers
+    params = {
+        'mode': 'get_config',
+        'section': 'servers'
+    }
+    data = generic_api_request(params)
+    if data:
+        servers = data["config"]["servers"]
+        enabled_servers = [s['name'] for s in servers if s["enable"] == 1]
+        return enabled_servers
+    else:
+        return None
+
+def set_server_settings(servername, connections, pipelining):
+    params = {
+        'mode': 'set_config',
+        'section': 'servers',
+        'name': servername,
+        'connections': connections,
+        'pipelining_requests': pipelining
+    }
+    data = generic_api_request(params)
+    if data:
+        #print(f"Server settings updated successfully: {data}")
+        return True
+    else:
+        print(f"Failed to update server settings.")
+        return False
+    
+def restart_sabnzbd():
+    params = {
+        'mode': 'restart',
+    }
+    data = generic_api_request(params)
+    if data:
+        print(f"SABnzbd restarted successfully: {data}")
+        return True
+    else:
+        print(f"Failed to restart SABnzbd.")
+        return False
+
+def pause_and_resume_sabnzbd():
+    # Pause
+    params_pause = {
+        'mode': 'pause',
+    }
+    data_pause = generic_api_request(params_pause)
+    if data_pause:
+        print(f"SABnzbd paused successfully: {data_pause}")
+    else:
+        print(f"Failed to pause SABnzbd.")
+        return False
+    
+    time.sleep(2)  # Wait for a moment before resuming
+
+    # Resume
+    params_resume = {
+        'mode': 'resume',
+    }
+    data_resume = generic_api_request(params_resume)
+    if data_resume:
+        print(f"SABnzbd resumed successfully: {data_resume}")
+        return True
+    else:
+        print(f"Failed to resume SABnzbd.")
+        return False
+
+def add_NZB(filepath):
+    params = {
+        'mode': 'addlocalfile',
+        'name': filepath,
+        'pp': "0" # post-processing disabled, we just want to test the download speed
+    }
+    data = generic_api_request(params)
+    if data:
+        print(f"NZB file added successfully: {data}")
+        return True
+    else:
+        print(f"Failed to add NZB file.")
+        return False
 
 def get_average_speed_of_last_download():
-
-    # get average speed of the last download
-    #fullurl = "http://127.0.0.1:8080/api?mode=history&start=0&limit=1&output=json&apikey=c2e5eb4c6b3e4a05a34c4beb9d2aaab0"
-    fullurl = base + "mode=history&start=0&limit=1&output=json&apikey=" + apikey
-    #print(f"Full URL: {fullurl}")
-    try:        
-        response = requests.get(fullurl)
-        if response.status_code == 200:
-            data = response.json()
-    except Exception as e:
-        #print(f"An error occurred while fetching data: {e}")    
-        pass
+    params = {
+        'mode': 'history',
+        'limit': 1
+    }
+    data = generic_api_request(params)
+    # if data and "history" in data and len(data["history"]) > 0:
+    #     last_download = data["history"][0]
+    #     return last_download.get("avg_speed", 0.0)
+    # else:
+    #     print("No download history found.")
+    #     return 0.0
     avg_speed = 0.0
     if data:
         download_str = data["history"]["slots"][0]["stage_log"][1]["actions"][0]
@@ -43,100 +156,58 @@ def get_average_speed_of_last_download():
             avg_speed = float(avg_speed)
     return avg_speed
 
-def queue_mbleft():
-    fullurl = base + "mode=queue&output=json&apikey=" + apikey
-    try:        
-        response = requests.get(fullurl)
-        if response.status_code == 200:
-            data = response.json()
-    except Exception as e:
-        #print(f"An error occurred while fetching data: {e}")    
-        return None
-    mbleft = 0.0
+def get_storage_from_history():
+    params = {
+        'mode': 'history',
+        'limit': 1
+    }
+    data = generic_api_request(params)
+    #print(f"History Data: {data}")
     if data:
-        mbleft = data["queue"]["mbleft"]
-    return float(mbleft)
-
-def get_enabled_servers():
-    # "http://drdr.local.:8080/api?mode=get_config&section=servers&apikey=c2e5eb4c6b3e4a05a34c4beb9d2aaab0"
-    fullurl = base + "mode=get_config&section=servers&apikey=" + apikey
-    try:        
-        response = requests.get(fullurl)
-        if response.status_code == 200:
-            data = response.json()
-    except Exception as e:
-        #print(f"An error occurred while fetching data: {e}")    
+        slots = data.get("history", {}).get("slots", [])
+        #print(f"Slots: {slots}")
+        if slots:
+            return slots[0].get("storage")
         return None
-    enabled_servers = []
-    if data:
-        for server in data["config"]["servers"]:
-            #servers.append(server["name"])
-            print(server["name"])
-            print(server["enable"])
-            if server["enable"] == 1:
-                print(f"Server {server['name']} is enabled.")
-                enabled_servers.append(server["name"])
-    #return servers
-    return enabled_servers
+    return None
 
-def set_server_settings(servername, connections, pipelining):
-    # Implementation for setting server settings
-    #  "http://drdr.local.:8080/api?mode=set_config&section=servers&name=news.iad.newshosting.com&connections=44&pipelining_requests=7&apikey=c2e5eb4c6b3e4a05a34c4beb9d2aaab0"
-    fullurl = base + f"mode=set_config&section=servers&name={servername}&connections={connections}&pipelining_requests={pipelining}&apikey={apikey}"
-    try:        
-        response = requests.get(fullurl)
-        if response.status_code == 200:
-            data = response.json()
-            #print(f"Server settings updated successfully: {data}")
-    except Exception as e:
-        print(f"An error occurred while setting server settings: {e}")    
-        return False
-    return True
-
-def restart_sabnzbd():
-    # Implementation for restarting SABnzbd
-    # "http://drdr.local.:8080/api?mode=restart&apikey=c2e5eb4c6b3e4a05a34c4beb9d2aaab0"
-    fullurl = base + "mode=restart&apikey=" + apikey
-    try:        
-        response = requests.get(fullurl)
-        if response.status_code == 200:
-            data = response.json()
-            print(f"SABnzbd restarted successfully: {data}")
-    except Exception as e:
-        print(f"An error occurred while restarting SABnzbd: {e}")    
-        return False
-    return True
-
-def add_NZB(filepath):
-    # Implementation for adding NZB file to the queue
-    # "http://drdr.local.:8080/sabnzbd/api?mode=addlocalfile&name=/tmp/blabla.nzb&apikey=your_apikey_here"
-    # "http://localhost:8080/api?mode=addlocalfile&name=/home/sander/git/benchmarking_connections_pipelining_sabnzbd/test_download_1000MB.nzb&apikey=3aa5b2faa7874d75a7fd3059f351d595"
-
-    fullurl = base + f"mode=addlocalfile&name={filepath}&apikey={apikey}"
-    try:        
-        response = requests.get(fullurl)
-        if response.status_code == 200:
-            data = response.json()
-            print(f"NZB file added successfully: {data}")
-    except Exception as e:
-        print(f"An error occurred while adding NZB file: {e}")    
-        return False
-    return True
+def remove_download(nzb_name, storage):
+    # from nzb_name, remove ".nzb" to get "test_download_1000MB"
+    nzb_name = nzb_name.replace(".nzb", "")
+    print(nzb_name, type(nzb_name))
+    print(storage, type(storage))
+    print(f"Is NZB name in storage path? {'Yes' if str(nzb_name) in str(storage) else 'No'}")
+    pos = str(storage).find(str(nzb_name))
+    print(f"Position of NZB name in storage path: {pos}")
+    if str(nzb_name) in str(storage):
+        # remove directory "/complete/test_download_1000MB" or "/incomplete/test_download_1000MB"
+        dir_to_remove = storage
+        print(f"Removing directory: {dir_to_remove}")
+        if os.path.isdir(dir_to_remove):
+            try:
+                import shutil
+                shutil.rmtree(dir_to_remove)
+                print(f"Directory removed successfully.")
+            except Exception as e:
+                print(f"Failed to remove directory: {e}")
+        else:
+            print(f"Directory not found: {dir_to_remove}")
+    else:
+        print(f"NZB name not found in storage path: {storage}")
+    
 
 
+if __name__ == "__main__":
+    
 
-def main():
-    print("Hello, World!")
-
-    mbleft = queue_mbleft()
+    mbleft = get_mbleft()
     if mbleft is None:
         print("Could not fetch queue information. Is SABnzbd reachable?")
         sys.exit(1)
     elif mbleft != 0.0:
-        print("Download in queue. Please wait for it to finish before running the benchmark.")
+        print(f"Download in queue, size {mbleft} MB. Please wait for it to finish before running the benchmark.")
         sys.exit(1)
 
-    #print(queue_mbleft())
 
     enabled_servers = get_enabled_servers()
     if len(enabled_servers) == 0:
@@ -148,6 +219,8 @@ def main():
     servername = enabled_servers[0]
     print(f"Using server: {servername}")
 
+    #OK, boilerplate done. Now the stuff we want to test:
+
     # set server settings
     connections = 22
     pipelining = 5
@@ -155,50 +228,45 @@ def main():
         print("Failed to set server settings.")
         sys.exit(1)
 
-    restart_sabnzbd() # to make new server settings take effect
-
-    # wait for SABnzbd to restart
-    time.sleep(5)
-    for i in range(100):
-        mbleft = queue_mbleft()
-        if mbleft is not None:
-            # SAB is restarted
-            # break out of loop
-            break
-        print(".", end="")
-        time.sleep(1)
-    print("\nSABnzbd is ready. Starting benchmark...")
+    pause_and_resume_sabnzbd() # to make new server settings take effect
 
     # get working diretory
     working_dir = os.getcwd()
-    nzb_file = os.path.join(working_dir, "test_download_1000MB.nzb")
+    nzb_name = "test_download_1000MB.nzb"
+    nzb_file = os.path.join(working_dir, nzb_name)
     if not os.path.isfile(nzb_file):
         print(f"NZB file not found: {nzb_file}")
         sys.exit(1)
 
     add_NZB(nzb_file)
 
+    # wait until it starts downloading. But take some time due to pre-checking.
     while True:
-         mbleft = queue_mbleft()
+         mbleft = get_mbleft()
          if mbleft > 0.0:
             # download has started
             break
          print(".", end="")
          time.sleep(0.1)
 
-    # watch mbleft until it becomes 0 again, which means the download is finished
+    # OK, started, now wait until it finishes. Watch mbleft until it becomes 0 again, which means the download is finished
     while True:
-        mbleft = queue_mbleft()
+        mbleft = get_mbleft()
         print(f"MB left: {mbleft}   ", end="")
         if mbleft == 0.0:
             print("Download finished.")
             break
-        print(f"{mbleft}", end="")
         time.sleep(1)
 
 
     avg_speed = get_average_speed_of_last_download()
-    print(f"Final Average Speed: {avg_speed}")
+    print(f"Connections {connections}, Pipelining {pipelining}: Average Speed: {avg_speed}")
 
-if __name__ == "__main__":    
-    main()
+    time.sleep(5) # wait a bit to make sure everything is written to history and storage paths are correct
+
+    # delete from harddisk:
+    storage = get_storage_from_history()
+    print(f"Storage from history JSON: {storage}")
+    remove_download(nzb_name, storage)
+
+    sys.exit(0)
