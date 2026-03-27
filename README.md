@@ -8,7 +8,7 @@ A tool to measure resulting download speed with different values of Connections 
 - Make sure the queue is empty.
 - Use the Wrench to measure your max linespeed
 - Make sure no Bandwidth limitation is set.
-
+- Run this script on the same machine as SABNzbd (same user, no docker ... or set apikey in this script manually)
 
 ```
 python3 run_benchmark.py > results/my_results.txt
