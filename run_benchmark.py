@@ -237,7 +237,7 @@ def download_and_get_speed(servername, connections, pipelining, nzb_name):
             break
          print(".", end="")
          time.sleep(0.1)
-    print("\nDownload has started.")
+    print(f"\nDownload has started: MB left: {mbleft}")
 
      # OK, started, now wait until it finishes. Watch mbleft until it becomes 0 again, which means the download is finished
     while True:
