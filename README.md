@@ -6,7 +6,9 @@ A tool to measure resulting download speed with different values of Connections 
 - Make sure SABnzbd is running. 
 - Make sure only one newsserver is active.
 - Make sure the queue is empty.
+- Use the Wrench to measure your max linespeed
 - Make sure no Bandwidth limitation is set.
+
 
 ```
 python3 run_benchmark.py > results/my_results.txt
