@@ -3,15 +3,15 @@ Benchmarking of Conncetions and Pipelining in SABnzbd
 
 A tool to measure resulting download speed with different values of Connections and Pipelining.
 
-Make sure SABnzbd is running. 
-Make sure only one newsserver is active.
-Make sure no Bandwidth limitation is set.
+- Make sure SABnzbd is running. 
+- Make sure only one newsserver is active.
+- Make sure no Bandwidth limitation is set.
 
-'''
+```
 python3 run_benchmark.py > results/my_results.txt
 # wait until it returns to the prompt
 cat results/my_results.txt | grep  -e Ping -e "Using NZB" -e Average 
-'''
+```
 
 To get the 5 combinations with the highest speed:
 ```
