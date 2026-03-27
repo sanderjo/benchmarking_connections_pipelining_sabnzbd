@@ -33,6 +33,7 @@ else:
     #print(f"Using API key: {apikey}", flush=True)
 
 nzb_name = "test_download_1000MB.nzb"
+nzb_name = "my_test.nzb"
 
 # #base = "http://111.168.1.111:8080/api?"
 # apikey = "3aa5"
