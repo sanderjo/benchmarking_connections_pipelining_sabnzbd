@@ -299,7 +299,7 @@ if __name__ == "__main__":
     #OK, boilerplate done. Now the stuff we want to test:
 
     # set server settings
-    connections_list = [1, 5, 10, 20, 80]
+    connections_list = [5, 10, 20, 80]
     pipelining_list = [1, 2, 5, 10, 20]
 
     # connections = 22
