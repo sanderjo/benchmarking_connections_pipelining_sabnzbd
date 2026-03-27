@@ -28,7 +28,7 @@ if apikey is None:
     print("Could not find API key in ~/.sabnzbd/sabnzbd.ini. Please make sure it is there and try again.")
     sys.exit(1)
 else:
-    print(f"Using API key: {apikey}")
+    print(f"Using API key: {apikey}", flush=True)
 nzb_name = "test_download_1000MB.nzb"
 
 # #base = "http://111.168.1.111:8080/api?"
@@ -41,7 +41,7 @@ def generic_api_request(params):
         data = response.json()
         return data
     except Exception as e:
-        print(f"Failed to get stats: {e}")
+        print(f"Failed to get stats: {e}", flush=True)
         return None
     
 def check_connection_and_apikey():
@@ -49,11 +49,11 @@ def check_connection_and_apikey():
         'mode': 'get_config',
     }
     data = generic_api_request(params)
-    print(f"API Response: {data}")
+    print(f"API Response: {data}", flush=True)
     if data and "config" in data:
-        print("API key is valid.")
+        print("API key is valid.", flush=True)
     else:
-        print("API key is invalid or there was an error.")
+        print("API key is invalid or there was an error.", flush=True)
 
 
 def get_mbleft():
@@ -94,7 +94,7 @@ def set_server_settings(servername, connections, pipelining):
         #print(f"Server settings updated successfully: {data}")
         return True
     else:
-        print(f"Failed to update server settings.")
+        print(f"Failed to update server settings.", flush=True)
         return False
     
 def restart_sabnzbd():
@@ -103,10 +103,10 @@ def restart_sabnzbd():
     }
     data = generic_api_request(params)
     if data:
-        print(f"SABnzbd restarted successfully: {data}")
+        print(f"SABnzbd restarted successfully: {data}", flush=True)
         return True
     else:
-        print(f"Failed to restart SABnzbd.")
+        print(f"Failed to restart SABnzbd.", flush=True)
         return False
 
 def pause_and_resume_sabnzbd():
@@ -116,9 +116,9 @@ def pause_and_resume_sabnzbd():
     }
     data_pause = generic_api_request(params_pause)
     if data_pause:
-        print(f"SABnzbd paused successfully: {data_pause}")
+        print(f"SABnzbd paused successfully: {data_pause}", flush=True)
     else:
-        print(f"Failed to pause SABnzbd.")
+        print(f"Failed to pause SABnzbd.", flush=True)
         return False
     
     time.sleep(2)  # Wait for a moment before resuming
@@ -129,10 +129,10 @@ def pause_and_resume_sabnzbd():
     }
     data_resume = generic_api_request(params_resume)
     if data_resume:
-        print(f"SABnzbd resumed successfully: {data_resume}")
+        print(f"SABnzbd resumed successfully: {data_resume}", flush=True)
         return True
     else:
-        print(f"Failed to resume SABnzbd.")
+        print(f"Failed to resume SABnzbd.", flush=True)
         return False
 
 def add_NZB(filepath):
@@ -143,10 +143,10 @@ def add_NZB(filepath):
     }
     data = generic_api_request(params)
     if data:
-        print(f"NZB file added successfully: {data}")
+        print(f"NZB file added successfully: {data}", flush=True)
         return True
     else:
-        print(f"Failed to add NZB file.")
+        print(f"Failed to add NZB file.", flush=True)
         return False
 
 def get_average_speed_of_last_download():
@@ -164,7 +164,7 @@ def get_average_speed_of_last_download():
     avg_speed = 0.0
     if data:
         download_str = data["history"]["slots"][0]["stage_log"][1]["actions"][0]
-        print(f"Download String: {download_str}")
+        print(f"Download String: {download_str}", flush=True)
         # from "Downloaded in 9 mins 59 seconds at an average of 5.3 MB/s<br/>Age: 1h" get "5.3"
         match = re.search(r"an average of (\d+\.\d+) MB/s", download_str)
         if match:
@@ -205,13 +205,13 @@ def remove_download(nzb_name, storage):
             try:
                 import shutil
                 shutil.rmtree(dir_to_remove)
-                print(f"Directory removed successfully.")
+                print(f"Directory removed successfully.", flush=True)
             except Exception as e:
-                print(f"Failed to remove directory: {e}")
+                print(f"Failed to remove directory: {e}", flush=True)
         else:
-            print(f"Directory not found: {dir_to_remove}")
+            print(f"Directory not found: {dir_to_remove}", flush=True)
     else:
-        print(f"NZB name not found in storage path: {storage}")
+        print(f"NZB name not found in storage path: {storage}", flush=True)
     
 def download_and_get_speed(servername, connections, pipelining, nzb_name):
     if not set_server_settings(servername, connections, pipelining):
@@ -229,22 +229,22 @@ def download_and_get_speed(servername, connections, pipelining, nzb_name):
     add_NZB(nzb_file)
 
      # wait until it starts downloading. But take some time due to pre-checking.
-    print("Waiting for download to start", end="")
+    print("Waiting for download to start", end="", flush=True)
     while True:
          mbleft = get_mbleft()
          if mbleft > 0.0:
             # download has started
             break
-         print(".", end="")
+         print(".", end="", flush=True)
          time.sleep(0.1)
-    print(f"\nDownload has started: MB left: {mbleft}")
+    print(f"\nDownload has started: MB left: {mbleft}", flush=True)
 
      # OK, started, now wait until it finishes. Watch mbleft until it becomes 0 again, which means the download is finished
     while True:
         mbleft = get_mbleft()
-        print(f"MB left: {mbleft}   ", end="")
+        print(f"MB left: {mbleft}   ", end="", flush=True)
         if mbleft == 0.0:
-            print("Download finished.")
+            print("Download finished.", flush=True)
             break
         time.sleep(1)
 
@@ -252,7 +252,7 @@ def download_and_get_speed(servername, connections, pipelining, nzb_name):
 
     # delete from harddisk:
     storage = get_storage_from_history()
-    print(f"Storage from history JSON: {storage}")
+    print(f"Storage from history JSON: {storage}", flush=True)
     remove_download(nzb_name, storage)
     avg_speed = get_average_speed_of_last_download()
     return avg_speed
@@ -260,13 +260,27 @@ def download_and_get_speed(servername, connections, pipelining, nzb_name):
 def get_ping_time(host):
     import subprocess
     try:
-        output = subprocess.check_output(["ping", "-c", "1", host], universal_newlines=True)
-        match = re.search(r"time=(\d+\.\d+) ms", output)
-        if match:
-            return float(match.group(1))
+        output = subprocess.check_output(["ping", "-c", "4", host], universal_newlines=True)
+        # from the line "rtt min/avg/max/mdev = 10.476/15.200/21.276/4.156 ms" extract the avg time, which is the second number in the min/avg/max/mdev part
+        avg_time = re.search(r"rtt min/avg/max/mdev = .*/(\d+\.\d+)/(\d+\.\d+)/", output)
+        #print(f"Ping output: {output}")
+        if avg_time:
+            return float(avg_time.group(1))
     except Exception as e:
-        print(f"Failed to ping {host}: {e}")
-    return None
+        print(f"Error pinging {host}: {e}")
+        return None
+
+# def get_ping_time(host):
+#     import subprocess
+#     try:
+#         output = subprocess.check_output(["ping", "-c", "4", host], universal_newlines=True)
+#         print(f"Ping output: {output}")
+#         match = re.search(r"time=(\d+\.\d+) ms", output)
+#         if match:
+#             return float(match.group(1))
+#     except Exception as e:
+#         print(f"Failed to ping {host}: {e}")
+#     return None
 
 if __name__ == "__main__":
     
@@ -293,6 +307,8 @@ if __name__ == "__main__":
     print(f"Ping time to server {servername}: {ping_time} ms")
     print(f"Using NZB file: {nzb_name}")
 
+    # sys.exit(0) # comment this out to run the benchmark, for now we just want to check if everything is set up correctly
+
     print("Starting benchmark...")
     #sys.exit()
 
@@ -306,7 +322,8 @@ if __name__ == "__main__":
     # pipelining = 5
     for connections in connections_list:
         for pipelining in pipelining_list:
+            print(f"servername: {servername}, Connections {connections}, Pipelining {pipelining} ... starting")
             avg_speed = download_and_get_speed(servername, connections, pipelining, nzb_name)
-            print(f"Connections {connections}, Pipelining {pipelining}: Average Speed: {avg_speed}")
+            print(f"servername: {servername}, Connections {connections}, Pipelining {pipelining}: Average Speed: {avg_speed}")
 
 
