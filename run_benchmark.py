@@ -11,7 +11,24 @@ from timeit import main
 import requests
 
 base = "http://localhost:8080/api?"
+
+def get_apikey():
+    # read api_key from file $HOME/.sabnzbd/sabnzbd.ini
+    with open(os.path.expanduser("~/.sabnzbd/sabnzbd.ini"), "r") as f:
+        for line in f:
+            print(line)
+            if line.startswith("api_key"):
+                return line.split("=", 1)[1].strip()
+    return None
+
+
 apikey= "3aa5b2faa7874d75a7fd3059f351d595"
+apikey = get_apikey()
+if apikey is None:
+    print("Could not find API key in ~/.sabnzbd/sabnzbd.ini. Please make sure it is there and try again.")
+    sys.exit(1)
+else:
+    print(f"Using API key: {apikey}")
 nzb_name = "test_download_1000MB.nzb"
 
 # #base = "http://111.168.1.111:8080/api?"
