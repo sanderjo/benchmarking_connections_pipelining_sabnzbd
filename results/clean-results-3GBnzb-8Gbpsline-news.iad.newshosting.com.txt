@@ -1,0 +1,24 @@
+$ cat my_results-3GBnzb-8Gbpsline-news.iad.newshosting.com.txt | grep  -e Ping -e "Using NZB" -e Average -e "Using server"
+Using server: news.iad.newshosting.com
+Ping time to server news.iad.newshosting.com: 102 ms
+Using NZB file: my_test.nzb
+servername: news.iad.newshosting.com, Connections 5, Pipelining 1: Average Speed: 29.8
+servername: news.iad.newshosting.com, Connections 5, Pipelining 2: Average Speed: 34.9
+servername: news.iad.newshosting.com, Connections 5, Pipelining 5: Average Speed: 81.1
+servername: news.iad.newshosting.com, Connections 5, Pipelining 10: Average Speed: 141.4
+servername: news.iad.newshosting.com, Connections 5, Pipelining 20: Average Speed: 112.5
+servername: news.iad.newshosting.com, Connections 10, Pipelining 1: Average Speed: 61.1
+servername: news.iad.newshosting.com, Connections 10, Pipelining 2: Average Speed: 55.3
+servername: news.iad.newshosting.com, Connections 10, Pipelining 5: Average Speed: 146.8
+servername: news.iad.newshosting.com, Connections 10, Pipelining 10: Average Speed: 179.3
+servername: news.iad.newshosting.com, Connections 10, Pipelining 20: Average Speed: 193.1
+servername: news.iad.newshosting.com, Connections 20, Pipelining 1: Average Speed: 116.2
+servername: news.iad.newshosting.com, Connections 20, Pipelining 2: Average Speed: 119.8
+servername: news.iad.newshosting.com, Connections 20, Pipelining 5: Average Speed: 230.8
+servername: news.iad.newshosting.com, Connections 20, Pipelining 10: Average Speed: 253.3
+servername: news.iad.newshosting.com, Connections 20, Pipelining 20: Average Speed: 210.8
+servername: news.iad.newshosting.com, Connections 80, Pipelining 1: Average Speed: 253.1
+servername: news.iad.newshosting.com, Connections 80, Pipelining 2: Average Speed: 330.5
+servername: news.iad.newshosting.com, Connections 80, Pipelining 5: Average Speed: 304.0
+servername: news.iad.newshosting.com, Connections 80, Pipelining 10: Average Speed: 360.6
+servername: news.iad.newshosting.com, Connections 80, Pipelining 20: Average Speed: 333.4

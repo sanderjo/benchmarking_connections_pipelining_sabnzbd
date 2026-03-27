@@ -1,0 +1,23 @@
+$ cat my_results-3GBnzb-8Gbpsline-news.newshosting.com.txt | grep  -e Ping -e "Using NZB" -e Average
+Ping time to server news.newshosting.com: 3 ms
+Using NZB file: my_test.nzb
+servername: news.newshosting.com, Connections 5, Pipelining 1: Average Speed: 92.0
+servername: news.newshosting.com, Connections 5, Pipelining 2: Average Speed: 121.4
+servername: news.newshosting.com, Connections 5, Pipelining 5: Average Speed: 90.8
+servername: news.newshosting.com, Connections 5, Pipelining 10: Average Speed: 111.3
+servername: news.newshosting.com, Connections 5, Pipelining 20: Average Speed: 88.8
+servername: news.newshosting.com, Connections 10, Pipelining 1: Average Speed: 190.6
+servername: news.newshosting.com, Connections 10, Pipelining 2: Average Speed: 190.6
+servername: news.newshosting.com, Connections 10, Pipelining 5: Average Speed: 269.4
+servername: news.newshosting.com, Connections 10, Pipelining 10: Average Speed: 269.4
+servername: news.newshosting.com, Connections 10, Pipelining 20: Average Speed: 190.2
+servername: news.newshosting.com, Connections 20, Pipelining 1: Average Speed: 190.2
+servername: news.newshosting.com, Connections 20, Pipelining 2: Average Speed: 377.7
+servername: news.newshosting.com, Connections 20, Pipelining 5: Average Speed: 377.7
+servername: news.newshosting.com, Connections 20, Pipelining 10: Average Speed: 404.8
+servername: news.newshosting.com, Connections 20, Pipelining 20: Average Speed: 404.8
+servername: news.newshosting.com, Connections 80, Pipelining 1: Average Speed: 393.7
+servername: news.newshosting.com, Connections 80, Pipelining 2: Average Speed: 738.6
+servername: news.newshosting.com, Connections 80, Pipelining 5: Average Speed: 738.6
+servername: news.newshosting.com, Connections 80, Pipelining 10: Average Speed: 549.3
+servername: news.newshosting.com, Connections 80, Pipelining 20: Average Speed: 779.2

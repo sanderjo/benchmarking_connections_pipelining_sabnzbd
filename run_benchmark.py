@@ -35,8 +35,7 @@ else:
 nzb_name = "test_download_1000MB.nzb"
 nzb_name = "my_test.nzb"
 
-# #base = "http://111.168.1.111:8080/api?"
-# apikey = "3aa5"
+
 URL = f"{base}apikey={apikey}"
 
 def generic_api_request(params):
