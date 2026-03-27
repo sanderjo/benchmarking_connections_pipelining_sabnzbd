@@ -28,7 +28,10 @@ if apikey is None:
     print("Could not find API key in ~/.sabnzbd/sabnzbd.ini. Please make sure it is there and try again.")
     sys.exit(1)
 else:
-    print(f"Using API key: {apikey}", flush=True)
+    obfuscated_apikey = apikey[:4] + "..." + apikey[-4:]
+    print(f"Using API key: {obfuscated_apikey}")
+    #print(f"Using API key: {apikey}", flush=True)
+
 nzb_name = "test_download_1000MB.nzb"
 
 # #base = "http://111.168.1.111:8080/api?"

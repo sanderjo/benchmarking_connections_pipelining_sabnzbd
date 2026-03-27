@@ -5,6 +5,7 @@ A tool to measure resulting download speed with different values of Connections 
 
 - Make sure SABnzbd is running. 
 - Make sure only one newsserver is active.
+- Make sure the queue is empty.
 - Make sure no Bandwidth limitation is set.
 
 ```
