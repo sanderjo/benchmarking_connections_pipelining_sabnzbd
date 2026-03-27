@@ -16,7 +16,7 @@ def get_apikey():
     # read api_key from file $HOME/.sabnzbd/sabnzbd.ini
     with open(os.path.expanduser("~/.sabnzbd/sabnzbd.ini"), "r") as f:
         for line in f:
-            print(line)
+            #print(line)
             if line.startswith("api_key"):
                 return line.split("=", 1)[1].strip()
     return None
