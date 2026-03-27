@@ -229,6 +229,7 @@ def download_and_get_speed(servername, connections, pipelining, nzb_name):
     add_NZB(nzb_file)
 
      # wait until it starts downloading. But take some time due to pre-checking.
+    print("Waiting for download to start", end="")
     while True:
          mbleft = get_mbleft()
          if mbleft > 0.0:
@@ -236,6 +237,7 @@ def download_and_get_speed(servername, connections, pipelining, nzb_name):
             break
          print(".", end="")
          time.sleep(0.1)
+    print("\nDownload has started.")
 
      # OK, started, now wait until it finishes. Watch mbleft until it becomes 0 again, which means the download is finished
     while True:
