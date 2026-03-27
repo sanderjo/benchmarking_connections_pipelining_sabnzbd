@@ -1,0 +1,22 @@
+Ping time to server news.iad.newshosting.com: 104 ms
+Using NZB file: test_download_1000MB.nzb
+servername: news.iad.newshosting.com, Connections 5, Pipelining 1: Average Speed: 27.4
+servername: news.iad.newshosting.com, Connections 5, Pipelining 2: Average Speed: 24.4
+servername: news.iad.newshosting.com, Connections 5, Pipelining 5: Average Speed: 64.9
+servername: news.iad.newshosting.com, Connections 5, Pipelining 10: Average Speed: 71.8
+servername: news.iad.newshosting.com, Connections 5, Pipelining 20: Average Speed: 103.2
+servername: news.iad.newshosting.com, Connections 10, Pipelining 1: Average Speed: 46.6
+servername: news.iad.newshosting.com, Connections 10, Pipelining 2: Average Speed: 56.9
+servername: news.iad.newshosting.com, Connections 10, Pipelining 5: Average Speed: 110.9
+servername: news.iad.newshosting.com, Connections 10, Pipelining 10: Average Speed: 127.4
+servername: news.iad.newshosting.com, Connections 10, Pipelining 20: Average Speed: 119.8
+servername: news.iad.newshosting.com, Connections 20, Pipelining 1: Average Speed: 79.5
+servername: news.iad.newshosting.com, Connections 20, Pipelining 2: Average Speed: 93.7
+servername: news.iad.newshosting.com, Connections 20, Pipelining 5: Average Speed: 150.8
+servername: news.iad.newshosting.com, Connections 20, Pipelining 10: Average Speed: 158.1
+servername: news.iad.newshosting.com, Connections 20, Pipelining 20: Average Speed: 152.9
+servername: news.iad.newshosting.com, Connections 80, Pipelining 1: Average Speed: 135.7
+servername: news.iad.newshosting.com, Connections 80, Pipelining 2: Average Speed: 179.6
+servername: news.iad.newshosting.com, Connections 80, Pipelining 5: Average Speed: 171.5
+servername: news.iad.newshosting.com, Connections 80, Pipelining 10: Average Speed: 173.0
+servername: news.iad.newshosting.com, Connections 80, Pipelining 20: Average Speed: 115.7

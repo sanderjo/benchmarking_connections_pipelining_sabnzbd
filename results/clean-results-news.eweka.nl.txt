@@ -1,0 +1,22 @@
+Ping time to server news.eweka.nl: 4 ms
+Using NZB file: test_download_1000MB.nzb
+servername: news.eweka.nl, Connections 5, Pipelining 1: Average Speed: 84.3
+servername: news.eweka.nl, Connections 5, Pipelining 2: Average Speed: 217.9
+servername: news.eweka.nl, Connections 5, Pipelining 5: Average Speed: 239.2
+servername: news.eweka.nl, Connections 5, Pipelining 10: Average Speed: 248.7
+servername: news.eweka.nl, Connections 5, Pipelining 20: Average Speed: 253.6
+servername: news.eweka.nl, Connections 10, Pipelining 1: Average Speed: 153.4
+servername: news.eweka.nl, Connections 10, Pipelining 2: Average Speed: 230.5
+servername: news.eweka.nl, Connections 10, Pipelining 5: Average Speed: 246.8
+servername: news.eweka.nl, Connections 10, Pipelining 10: Average Speed: 264.9
+servername: news.eweka.nl, Connections 10, Pipelining 20: Average Speed: 263.5
+servername: news.eweka.nl, Connections 20, Pipelining 1: Average Speed: 226.2
+servername: news.eweka.nl, Connections 20, Pipelining 2: Average Speed: 255.0
+servername: news.eweka.nl, Connections 20, Pipelining 5: Average Speed: 254.8
+servername: news.eweka.nl, Connections 20, Pipelining 10: Average Speed: 259.8
+servername: news.eweka.nl, Connections 20, Pipelining 20: Average Speed: 193.9
+servername: news.eweka.nl, Connections 80, Pipelining 1: Average Speed: 112.0
+servername: news.eweka.nl, Connections 80, Pipelining 2: Average Speed: 240.3
+servername: news.eweka.nl, Connections 80, Pipelining 5: Average Speed: 238.9
+servername: news.eweka.nl, Connections 80, Pipelining 10: Average Speed: 246.6
+servername: news.eweka.nl, Connections 80, Pipelining 20: Average Speed: 249.0

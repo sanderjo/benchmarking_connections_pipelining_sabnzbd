@@ -303,7 +303,7 @@ if __name__ == "__main__":
         sys.exit(1)
     servername = enabled_servers[0]
     print(f"Using server: {servername}")
-    ping_time = get_ping_time(servername)
+    ping_time = int(get_ping_time(servername))
     print(f"Ping time to server {servername}: {ping_time} ms")
     print(f"Using NZB file: {nzb_name}")
 
@@ -322,7 +322,7 @@ if __name__ == "__main__":
     # pipelining = 5
     for connections in connections_list:
         for pipelining in pipelining_list:
-            print(f"servername: {servername}, Connections {connections}, Pipelining {pipelining} ... starting")
+            print(f"\nservername: {servername}, Connections {connections}, Pipelining {pipelining} ... starting")
             avg_speed = download_and_get_speed(servername, connections, pipelining, nzb_name)
             print(f"servername: {servername}, Connections {connections}, Pipelining {pipelining}: Average Speed: {avg_speed}")
 

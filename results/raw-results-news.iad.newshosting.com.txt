@@ -1,0 +1,245 @@
+Using API key: 3aa5b2faa7874d75a7fd3059f351d595
+Using server: news.iad.newshosting.com
+Ping time to server news.iad.newshosting.com: 104 ms
+Using NZB file: test_download_1000MB.nzb
+Starting benchmark...
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 1 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_5i1itz8q']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 1071.24   MB left: 1043.14   MB left: 1011.7   MB left: 981.68   MB left: 954.45   MB left: 924.43   MB left: 893.99   MB left: 863.26   MB left: 833.94   MB left: 803.91   MB left: 773.88   MB left: 744.86   MB left: 714.83   MB left: 685.51   MB left: 652.66   MB left: 622.63   MB left: 594.31   MB left: 564.28   MB left: 535.67   MB left: 506.34   MB left: 475.61   MB left: 445.18   MB left: 417.26   MB left: 387.94   MB left: 358.62   MB left: 329.29   MB left: 300.67   MB left: 269.54   MB left: 238.1   MB left: 210.18   MB left: 180.86   MB left: 152.24   MB left: 120.8   MB left: 92.89   MB left: 61.71   MB left: 30.37   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 39 seconds at an average of 27.4 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 1: Average Speed: 27.4
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 2 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_95u5vekr']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 1066.96   MB left: 1040.32   MB left: 1013.11   MB left: 987.3   MB left: 961.51   MB left: 935.01   MB left: 910.62   MB left: 882.0   MB left: 856.21   MB left: 828.3   MB left: 802.5   MB left: 777.41   MB left: 751.61   MB left: 725.11   MB left: 698.61   MB left: 671.4   MB left: 645.91   MB left: 620.82   MB left: 592.9   MB left: 567.81   MB left: 540.6   MB left: 514.81   MB left: 489.72   MB left: 463.21   MB left: 437.42   MB left: 410.21   MB left: 384.41   MB left: 361.44   MB left: 332.82   MB left: 307.02   MB left: 280.52   MB left: 254.72   MB left: 231.04   MB left: 204.54   MB left: 177.33   MB left: 152.95   MB left: 127.15   MB left: 102.06   MB left: 76.42   MB left: 50.42   MB left: 24.73   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 44 seconds at an average of 24.4 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 2: Average Speed: 24.4
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 5 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_0twtex2n']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 1045.4   MB left: 963.62   MB left: 883.41   MB left: 801.79   MB left: 721.89   MB left: 644.5   MB left: 576.68   MB left: 495.76   MB left: 417.26   MB left: 337.76   MB left: 256.84   MB left: 173.81   MB left: 92.19   MB left: 41.96   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 16 seconds at an average of 64.9 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 5: Average Speed: 64.9
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 10 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_7wm09ybz']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 1038.75   MB left: 945.74   MB left: 848.75   MB left: 758.97   MB left: 668.88   MB left: 572.75   MB left: 478.73   MB left: 383.41   MB left: 288.38   MB left: 195.37   MB left: 120.8   MB left: 26.1   MB left: 3.53   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 15 seconds at an average of 71.8 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 10: Average Speed: 71.8
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 20 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_jq2f6yzz']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.01   MB left: 1004.78   MB left: 855.5   MB left: 698.61   MB left: 543.12   MB left: 411.62   MB left: 273.06   MB left: 164.23   MB left: 49.72   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 10 seconds at an average of 103.2 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 20: Average Speed: 103.2
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 1 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_mftolfdx']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 1059.91   MB left: 1007.07   MB left: 951.23   MB left: 902.16   MB left: 845.22   MB left: 787.99   MB left: 734.28   MB left: 678.45   MB left: 622.63   MB left: 564.99   MB left: 509.87   MB left: 455.46   MB left: 399.63   MB left: 347.33   MB left: 293.92   MB left: 243.04   MB left: 190.74   MB left: 135.62   MB left: 94.71   MB left: 43.37   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 23 seconds at an average of 46.6 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 1: Average Speed: 46.6
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 2 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_wrssjlq7']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 1030.59   MB left: 965.03   MB left: 900.75   MB left: 834.64   MB left: 769.25   MB left: 702.14   MB left: 636.74   MB left: 571.34   MB left: 504.93   MB left: 440.94   MB left: 374.54   MB left: 309.85   MB left: 244.85   MB left: 177.33   MB left: 111.23   MB left: 41.25   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 19 seconds at an average of 56.9 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 2: Average Speed: 56.9
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 5 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_rme5yn5x']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 987.14   MB left: 831.12   MB left: 667.47   MB left: 516.22   MB left: 356.5   MB left: 196.38   MB left: 21.91   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 9 seconds at an average of 110.9 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 5: Average Speed: 110.9
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 10 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_2rx8l4o7']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 1011.83   MB left: 824.37   MB left: 596.13   MB left: 385.12   MB left: 174.82   MB left: 2.16   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 8 seconds at an average of 127.4 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 10: Average Speed: 127.4
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 20 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_6kj7yzhu']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 985.33   MB left: 779.52   MB left: 662.53   MB left: 498.18   MB left: 277.7   MB left: 41.66   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 9 seconds at an average of 119.8 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 20: Average Speed: 119.8
+
+servername: news.iad.newshosting.com, Connections 20, Pipelining 1 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_9cf8xz_3']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 1021.42   MB left: 931.48   MB left: 831.82   MB left: 724.41   MB left: 617.29   MB left: 510.98   MB left: 402.45   MB left: 296.04   MB left: 193.56   MB left: 84.88   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 13 seconds at an average of 79.5 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 20, Pipelining 1: Average Speed: 79.5
+
+servername: news.iad.newshosting.com, Connections 20, Pipelining 2 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_6xj_3xqs']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 990.67   MB left: 870.31   MB left: 746.98   MB left: 622.93   MB left: 502.82   MB left: 382.3   MB left: 254.72   MB left: 158.89   MB left: 17.67   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 11 seconds at an average of 93.7 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 20, Pipelining 2: Average Speed: 93.7
+
+servername: news.iad.newshosting.com, Connections 20, Pipelining 5 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_goj8mrwl']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 956.71   MB left: 721.48   MB left: 516.52   MB left: 304.5   MB left: 63.12   MB left: 1.41   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 7 seconds at an average of 150.8 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 20, Pipelining 5: Average Speed: 150.8
+
+servername: news.iad.newshosting.com, Connections 20, Pipelining 10 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_0ao_6w8j']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 927.09   MB left: 654.61   MB left: 382.44   MB left: 149.93   MB left: 14.55   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 6 seconds at an average of 158.1 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 20, Pipelining 10: Average Speed: 158.1
+
+servername: news.iad.newshosting.com, Connections 20, Pipelining 20 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_lnpl6zwf']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 924.87   MB left: 656.53   MB left: 414.58   MB left: 201.96   MB left: 54.15   MB left: 19.49   MB left: 2.86   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 7 seconds at an average of 152.9 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 20, Pipelining 20: Average Speed: 152.9
+
+servername: news.iad.newshosting.com, Connections 80, Pipelining 1 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_jpuxvuor']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 952.78   MB left: 724.61   MB left: 590.08   MB left: 439.53   MB left: 227.42   MB left: 20.46   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 8 seconds at an average of 135.7 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 80, Pipelining 1: Average Speed: 135.7
+
+servername: news.iad.newshosting.com, Connections 80, Pipelining 2 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_r2v_xlkl']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 919.23   MB left: 653.2   MB left: 383.41   MB left: 125.76   MB left: 4.94   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 6 seconds at an average of 179.6 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 80, Pipelining 2: Average Speed: 179.6
+
+servername: news.iad.newshosting.com, Connections 80, Pipelining 5 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_it1z2vkh']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 909.05   MB left: 640.91   MB left: 383.95   MB left: 123.95   MB left: 30.03   MB left: 8.46   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 6 seconds at an average of 171.5 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 80, Pipelining 5: Average Speed: 171.5
+
+servername: news.iad.newshosting.com, Connections 80, Pipelining 10 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_fnt3kgy2']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 892.62   MB left: 602.82   MB left: 346.08   MB left: 164.8   MB left: 85.69   MB left: 41.56   MB left: 23.68   MB left: 11.29   MB left: 4.23   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 6 seconds at an average of 173.0 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 80, Pipelining 10: Average Speed: 173.0
+
+servername: news.iad.newshosting.com, Connections 80, Pipelining 20 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_armvirpi']}
+Waiting for download to start
+Download has started: MB left: 1086.06
+MB left: 1086.06   MB left: 1086.06   MB left: 997.94   MB left: 807.49   MB left: 584.07   MB left: 480.99   MB left: 382.34   MB left: 280.96   MB left: 114.1   MB left: 50.37   MB left: 23.17   MB left: 7.35   MB left: 2.82   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/test_download_1000MB.4
+Directory removed successfully.
+Download String: Downloaded in 9 seconds at an average of 115.7 MB/s<br/>Age: 125d
+servername: news.iad.newshosting.com, Connections 80, Pipelining 20: Average Speed: 115.7
