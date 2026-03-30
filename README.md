@@ -20,6 +20,20 @@ cat results/my_results.txt | grep -e "Using server" -e Ping -e Internet -e "Down
 # get speeds:
 cat results/my_results.txt | grep Average
 ```
+# But easier and much more beuatiful ... if you have python package pandas installed:
+$ ./parse_with_pandas.py results/raw-results-news.iad.newshosting.com.txt
+Using server: news.iad.newshosting.com
+Ping time to server news.iad.newshosting.com: 104 ms
+test NZB size (MB): 1086.06
+
+
+Pipelining Articles     1      2      5      10     20
+Connections                                           
+5                     27.4   24.4   64.9   71.8  103.2
+10                    46.6   56.9  110.9  127.4  119.8
+20                    79.5   93.7  150.8  158.1  152.9
+80                   135.7  179.6  171.5  173.0  115.7
+```
 
 To get the 5 combinations with the highest speed:
 ```

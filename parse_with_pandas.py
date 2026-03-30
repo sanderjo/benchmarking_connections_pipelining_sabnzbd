@@ -37,10 +37,8 @@ with open(filename, 'r') as f:
         
         if "Average Speed:" in line:
             # servername: news.iad.newshosting.com, Connections 10, Pipelining 2: Average Speed: 53.6
-            # split line into elements by comma and space
-            #line = line.replace("servername:", "")
             line = line.replace(",","").replace(":","")
-            elements = line.split(" ")
+            elements = line.split()
             #print(elements)
             # ['servername', 'news.iad.newshosting.com', 'Connections', '10', 'Pipelining', '2', 'Average', 'Speed', '53.6']
             servername = elements[1]
