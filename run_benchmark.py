@@ -38,9 +38,9 @@ nzb_name = "my_test.nzb"
 
 URL = f"{base}apikey={apikey}"
 
-def generic_api_request(params):
+def generic_api_request(params, timeout=5):
     try:
-        response = requests.get(URL, params=params, timeout=5)
+        response = requests.get(URL, params=params, timeout=timeout)
         data = response.json()
         return data
     except Exception as e:
@@ -273,6 +273,19 @@ def get_ping_time(host):
         print(f"Error pinging {host}: {e}")
         return None
 
+def get_internet_speed():
+    # get internet speed using speedtest-cli
+    # curl -s "http://127.0.0.1:8080/api?apikey=3aa5b2faa7874d75a7fd3059f351d595&mode=status&calculate_performance=1" | jq | grep -i internetbandwidth
+    params = {
+        'mode': 'status',
+        'calculate_performance': 1
+    }
+    data = generic_api_request(params, timeout=15)
+    print(f"Status Data: {data}", flush=True)
+    if data and "status" in data and "internetbandwidth" in data["status"]:
+        return data["status"]["internetbandwidth"]
+    return None
+
 # def get_ping_time(host):
 #     import subprocess
 #     try:
@@ -296,6 +309,12 @@ if __name__ == "__main__":
         print(f"Download in queue, size {mbleft} MB. Please wait for it to finish before running the benchmark.")
         sys.exit(1)
 
+    internetspeed = get_internet_speed()
+    if internetspeed is not None:
+        print(f"Internet speed: {internetspeed} MB/s")
+    else:
+        print("Could not fetch internet speed.")
+        sys.exit(1)
 
     enabled_servers = get_enabled_servers()
     if len(enabled_servers) == 0:
