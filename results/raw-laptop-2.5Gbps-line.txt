@@ -1,0 +1,123 @@
+Using API key: 3aa5...d595
+Using server: news.iad.newshosting.com
+Ping time to server news.iad.newshosting.com: 95 ms
+Using NZB file: my_test.nzb
+Checking internet speed...
+Internet speed: 318.75 MB/s
+Starting benchmark...
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 1 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_zkscu7hd']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3472.52   MB left: 3450.65   MB left: 3427.37   MB left: 3405.5   MB left: 3382.93   MB left: 3359.66   MB left: 3337.79   MB left: 3315.22   MB left: 3294.05   MB left: 3271.48   MB left: 3249.62   MB left: 3229.16   MB left: 3206.59   MB left: 3186.84   MB left: 3168.5   MB left: 3146.63   MB left: 3122.65   MB left: 3100.08   MB left: 3081.74   MB left: 3065.51   MB left: 3048.58   MB left: 3031.66   MB left: 3014.73   MB left: 2997.8   MB left: 2981.57   MB left: 2965.35   MB left: 2948.42   MB left: 2932.9   MB left: 2913.86   MB left: 2893.4   MB left: 2880.71   MB left: 2863.78   MB left: 2841.91   MB left: 2819.34   MB left: 2796.77   MB left: 2774.9   MB left: 2751.62   MB left: 2729.75   MB left: 2707.89   MB left: 2686.02   MB left: 2664.15   MB left: 2640.88   MB left: 2619.71   MB left: 2596.44   MB left: 2573.86   MB left: 2552.0   MB left: 2528.72   MB left: 2511.79   MB left: 2488.51   MB left: 2464.53   MB left: 2444.78   MB left: 2424.32   MB left: 2401.75   MB left: 2378.47   MB left: 2355.9   MB left: 2332.62   MB left: 2310.76   MB left: 2290.3   MB left: 2273.37   MB left: 2255.74   MB left: 2238.1   MB left: 2221.17   MB left: 2202.13   MB left: 2185.91   MB left: 2167.57   MB left: 2149.93   MB left: 2133.0   MB left: 2116.07   MB left: 2096.32   MB left: 2073.75   MB left: 2050.47   MB left: 2030.02   MB left: 2006.74   MB left: 1983.46   MB left: 1960.89   MB left: 1937.61   MB left: 1915.75   MB left: 1892.47   MB left: 1869.9   MB left: 1845.91   MB left: 1823.34   MB left: 1802.18   MB left: 1779.61   MB left: 1757.74   MB left: 1733.76   MB left: 1709.77   MB left: 1686.5   MB left: 1666.75   MB left: 1645.58   MB left: 1623.72   MB left: 1601.14   MB left: 1578.57   MB left: 1558.12   MB left: 1544.71   MB left: 1524.96   MB left: 1501.69   MB left: 1481.93   MB left: 1458.66   MB left: 1437.49   MB left: 1417.04   MB left: 1394.47   MB left: 1372.6   MB left: 1349.32   MB left: 1327.45   MB left: 1307.0   MB left: 1287.25   MB left: 1266.79   MB left: 1243.51   MB left: 1223.06   MB left: 1201.19   MB left: 1179.32   MB left: 1159.57   MB left: 1138.41   MB left: 1115.84   MB left: 1092.56   MB left: 1071.4   MB left: 1049.53   MB left: 1026.96   MB left: 1005.09   MB left: 981.81   MB left: 959.95   MB left: 941.61   MB left: 919.04   MB left: 897.17   MB left: 874.6   MB left: 852.02   MB left: 828.75   MB left: 804.76   MB left: 781.49   MB left: 758.21   MB left: 734.93   MB left: 711.66   MB left: 688.38   MB left: 665.8   MB left: 642.53   MB left: 619.95   MB left: 596.68   MB left: 573.4   MB left: 549.41   MB left: 526.84   MB left: 502.86   MB left: 480.29   MB left: 458.42   MB left: 433.73   MB left: 411.16   MB left: 388.59   MB left: 364.6   MB left: 341.33   MB left: 319.46   MB left: 299.11   MB left: 275.02   MB left: 253.03   MB left: 231.87   MB left: 209.87   MB left: 186.59   MB left: 163.31   MB left: 140.03   MB left: 116.76   MB left: 96.9   MB left: 73.62   MB left: 52.46   MB left: 29.18   MB left: 6.61   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory removed successfully.
+Download String: Downloaded in 2 mins 45 seconds at an average of 21.0 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 1: Average Speed: 21.0
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 2 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_acnigxev']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3464.05   MB left: 3433.72   MB left: 3403.39   MB left: 3373.06   MB left: 3342.73   MB left: 3312.39   MB left: 3282.06   MB left: 3251.03   MB left: 3219.99   MB left: 3190.37   MB left: 3158.62   MB left: 3129.0   MB left: 3098.67   MB left: 3067.63   MB left: 3038.71   MB left: 3008.38   MB left: 2976.64   MB left: 2945.6   MB left: 2915.97   MB left: 2884.94   MB left: 2855.31   MB left: 2824.28   MB left: 2794.65   MB left: 2762.91   MB left: 2732.57   MB left: 2702.24   MB left: 2671.91   MB left: 2640.17   MB left: 2610.54   MB left: 2580.21   MB left: 2549.17   MB left: 2517.43   MB left: 2489.92   MB left: 2458.18   MB left: 2428.56   MB left: 2397.52   MB left: 2365.78   MB left: 2335.45   MB left: 2305.11   MB left: 2274.78   MB left: 2244.45   MB left: 2213.41   MB left: 2183.08   MB left: 2152.05   MB left: 2121.72   MB left: 2090.68   MB left: 2059.64   MB left: 2030.02   MB left: 1998.28   MB left: 1969.35   MB left: 1938.32   MB left: 1907.28   MB left: 1876.24   MB left: 1845.21   MB left: 1814.17   MB left: 1783.84   MB left: 1754.92   MB left: 1723.18   MB left: 1692.84   MB left: 1663.22   MB left: 1632.89   MB left: 1602.56   MB left: 1570.81   MB left: 1540.48   MB left: 1510.86   MB left: 1480.52   MB left: 1450.19   MB left: 1419.16   MB left: 1389.53   MB left: 1354.26   MB left: 1323.22   MB left: 1292.89   MB left: 1262.56   MB left: 1232.23   MB left: 1201.89   MB left: 1172.97   MB left: 1142.64   MB left: 1112.31   MB left: 1081.98   MB left: 1050.24   MB left: 1019.91   MB left: 990.28   MB left: 958.54   MB left: 928.21   MB left: 896.46   MB left: 865.43   MB left: 836.51   MB left: 805.47   MB left: 773.73   MB left: 743.4   MB left: 712.36   MB left: 681.32   MB left: 651.7   MB left: 619.25   MB left: 588.21   MB left: 559.29   MB left: 528.96   MB left: 497.92   MB left: 466.88   MB left: 436.55   MB left: 406.22   MB left: 376.6   MB left: 348.38   MB left: 316.64   MB left: 289.13   MB left: 257.97   MB left: 228.34   MB left: 197.17   MB left: 166.13   MB left: 136.51   MB left: 106.07   MB left: 76.44   MB left: 46.11   MB left: 15.08   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory removed successfully.
+Download String: Downloaded in 1 min 57 seconds at an average of 29.8 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 2: Average Speed: 29.8
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 5 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_tnpywf75']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3440.07   MB left: 3368.12   MB left: 3297.58   MB left: 3222.11   MB left: 3145.93   MB left: 3071.86   MB left: 2996.39   MB left: 2924.44   MB left: 2848.26   MB left: 2774.19   MB left: 2699.42   MB left: 2635.23   MB left: 2559.05   MB left: 2485.69   MB left: 2413.04   MB left: 2336.15   MB left: 2266.32   MB left: 2191.55   MB left: 2116.78   MB left: 2038.48   MB left: 1961.6   MB left: 1887.53   MB left: 1810.64   MB left: 1730.23   MB left: 1651.93   MB left: 1577.87   MB left: 1498.86   MB left: 1421.98   MB left: 1342.97   MB left: 1263.26   MB left: 1184.97   MB left: 1103.85   MB left: 1022.73   MB left: 945.13   MB left: 863.31   MB left: 785.01   MB left: 707.42   MB left: 625.6   MB left: 546.59   MB left: 467.59   MB left: 389.29   MB left: 311.56   MB left: 234.69   MB left: 159.08   MB left: 80.68   MB left: 0.26   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory removed successfully.
+Download String: Downloaded in 48 seconds at an average of 71.7 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 5: Average Speed: 71.7
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 10 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_726hl3ha']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3389.28   MB left: 3253.14   MB left: 3112.77   MB left: 2973.82   MB left: 2831.33   MB left: 2689.55   MB left: 2542.83   MB left: 2393.29   MB left: 2246.57   MB left: 2061.76   MB left: 1909.4   MB left: 1770.44   MB left: 1620.19   MB left: 1473.47   MB left: 1329.57   MB left: 1180.03   MB left: 1032.6   MB left: 896.46   MB left: 761.03   MB left: 621.37   MB left: 487.34   MB left: 365.31   MB left: 214.1   MB left: 77.85   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory removed successfully.
+Download String: Downloaded in 27 seconds at an average of 126.5 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 10: Average Speed: 126.5
+
+servername: news.iad.newshosting.com, Connections 5, Pipelining 20 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_npl8nbfj']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3409.03   MB left: 3260.2   MB left: 3110.66   MB left: 2956.18   MB left: 2805.94   MB left: 2652.16   MB left: 2499.09   MB left: 2346.03   MB left: 2212.0   MB left: 2085.74   MB left: 1948.19   MB left: 1792.3   MB left: 1635.0   MB left: 1471.35   MB left: 1316.87   MB left: 1158.87   MB left: 1002.98   MB left: 847.79   MB left: 692.61   MB left: 538.83   MB left: 382.94   MB left: 232.57   MB left: 96.2   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory removed successfully.
+Download String: Downloaded in 26 seconds at an average of 133.2 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 5, Pipelining 20: Average Speed: 133.2
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 1 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_w6xmipsz']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3450.65   MB left: 3408.33   MB left: 3363.18   MB left: 3318.74   MB left: 3275.01   MB left: 3232.69   MB left: 3190.36   MB left: 3145.93   MB left: 3102.9   MB left: 3058.46   MB left: 3013.32   MB left: 2970.29   MB left: 2924.44   MB left: 2880.71   MB left: 2834.15   MB left: 2791.12   MB left: 2748.09   MB left: 2702.95   MB left: 2658.51   MB left: 2616.19   MB left: 2570.34   MB left: 2527.31   MB left: 2484.99   MB left: 2439.84   MB left: 2398.93   MB left: 2355.2   MB left: 2309.35   MB left: 2266.32   MB left: 2222.59   MB left: 2177.44   MB left: 2134.41   MB left: 2092.8   MB left: 2046.95   MB left: 2003.21   MB left: 1960.18   MB left: 1915.04   MB left: 1869.9   MB left: 1827.57   MB left: 1783.13   MB left: 1738.7   MB left: 1693.55   MB left: 1649.11   MB left: 1609.61   MB left: 1568.7   MB left: 1525.67   MB left: 1481.93   MB left: 1436.79   MB left: 1393.06   MB left: 1349.32   MB left: 1306.29   MB left: 1263.26   MB left: 1220.23   MB left: 1174.38   MB left: 1130.65   MB left: 1086.21   MB left: 1040.36   MB left: 996.63   MB left: 952.19   MB left: 908.45   MB left: 870.36   MB left: 826.63   MB left: 782.9   MB left: 739.16   MB left: 696.14   MB left: 651.7   MB left: 609.37   MB left: 566.34   MB left: 521.9   MB left: 479.58   MB left: 437.26   MB left: 395.64   MB left: 351.91   MB left: 310.39   MB left: 269.96   MB left: 226.93   MB left: 183.06   MB left: 142.15   MB left: 98.31   MB left: 55.99   MB left: 13.66   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory removed successfully.
+Download String: Downloaded in 1 min 22 seconds at an average of 42.1 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 1: Average Speed: 42.1
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 2 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_cu5_w9i9']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3445.71   MB left: 3389.99   MB left: 3332.14   MB left: 3275.71   MB left: 3218.58   MB left: 3161.44   MB left: 3105.72   MB left: 3047.88   MB left: 2989.33   MB left: 2932.2   MB left: 2875.06   MB left: 2817.93   MB left: 2764.32   MB left: 2708.59   MB left: 2654.98   MB left: 2602.08   MB left: 2548.47   MB left: 2491.33   MB left: 2434.9   MB left: 2380.59   MB left: 2323.45   MB left: 2271.26   MB left: 2221.17   MB left: 2171.09   MB left: 2118.19   MB left: 2061.06   MB left: 2006.03   MB left: 1950.31   MB left: 1894.58   MB left: 1840.27   MB left: 1783.84   MB left: 1730.23   MB left: 1673.09   MB left: 1617.37   MB left: 1560.23   MB left: 1500.98   MB left: 1448.78   MB left: 1391.64   MB left: 1335.92   MB left: 1283.72   MB left: 1226.58   MB left: 1172.97   MB left: 1116.54   MB left: 1062.93   MB left: 1005.09   MB left: 948.66   MB left: 892.23   MB left: 833.68   MB left: 775.84   MB left: 718.0   MB left: 665.8   MB left: 606.55   MB left: 549.41   MB left: 492.28   MB left: 434.44   MB left: 376.6   MB left: 320.24   MB left: 267.14   MB left: 209.16   MB left: 153.44   MB left: 94.78   MB left: 39.76   MB left: 1.41   MB left: 0.71   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory removed successfully.
+Download String: Downloaded in 1 min 5 seconds at an average of 53.6 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 2: Average Speed: 53.6
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 5 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_lpchvkl2']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3396.33   MB left: 3236.92   MB left: 3076.8   MB left: 2920.21   MB left: 2765.02   MB left: 2599.96   MB left: 2448.31   MB left: 2284.66   MB left: 2121.72   MB left: 1960.18   MB left: 1794.42   MB left: 1638.53   MB left: 1474.88   MB left: 1315.46   MB left: 1159.57   MB left: 998.04   MB left: 832.98   MB left: 680.62   MB left: 432.32   MB left: 275.02   MB left: 115.94   MB left: 0.71   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory removed successfully.
+Download String: Downloaded in 24 seconds at an average of 140.4 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 5: Average Speed: 140.4
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 10 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_gexd1wik']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.03   MB left: 3338.49   MB left: 3123.36   MB left: 2894.11   MB left: 2662.74   MB left: 2420.8   MB left: 2168.98   MB left: 1919.27   MB left: 1637.12   MB left: 1399.4   MB left: 1167.33   MB left: 910.57   MB left: 655.93   MB left: 409.75   MB left: 163.31   MB left: 2.82   MB left: 0.0   Download finished.
+Storage from history JSON: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Directory not found: /media/sander/740c179a-2798-4527-84fa-c4d78c86ac16/home/sander/Downloads/complete/my_test
+Download String: Downloaded in 24 seconds at an average of 140.4 MB/s<br/>Age: 5d
+servername: news.iad.newshosting.com, Connections 10, Pipelining 10: Average Speed: 140.4
+
+servername: news.iad.newshosting.com, Connections 10, Pipelining 20 ... starting
+SABnzbd paused successfully: {'status': True}
+SABnzbd resumed successfully: {'status': True}
+NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_k82lwkag']}
+Waiting for download to start
+Download has started: MB left: 3488.07
+MB left: 3488.07   MB left: 3488.07   MB left: 3488.07   

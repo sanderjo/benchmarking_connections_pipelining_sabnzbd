@@ -9,11 +9,16 @@ A tool to measure resulting download speed with different values of Connections 
 - Use the Wrench to measure your max linespeed
 - Make sure no Bandwidth limitation is set.
 - Run this script on the same machine as SABNzbd (same user, no docker ... or set apikey in this script manually)
-
+- AND ... afterwards ... restore your server settings ...
 ```
 python3 run_benchmark.py > results/my_results.txt
 # wait until it returns to the prompt
 cat results/my_results.txt | grep  -e Ping -e "Using NZB" -e Average 
+
+# to get overall info:
+cat results/my_results.txt | grep -e "Using server" -e Ping -e Internet -e "Download has started" | sort -ur
+# get speeds:
+cat results/my_results.txt | grep Average
 ```
 
 To get the 5 combinations with the highest speed:
