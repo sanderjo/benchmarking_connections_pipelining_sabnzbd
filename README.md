@@ -20,7 +20,9 @@ cat results/my_results.txt | grep -e "Using server" -e Ping -e Internet -e "Down
 # get speeds:
 cat results/my_results.txt | grep Average
 ```
-# But easier and much more beuatiful ... if you have python package pandas installed:
+
+But easier and much more beautiful ... if you have python package pandas installed:
+```
 $ ./parse_with_pandas.py results/raw-results-news.iad.newshosting.com.txt
 Using server: news.iad.newshosting.com
 Ping time to server news.iad.newshosting.com: 104 ms
