@@ -223,7 +223,7 @@ def download_and_get_speed(servername, connections, pipelining, nzb_name):
 
     pause_and_resume_sabnzbd() # to make new server settings take effect
 
-    # get working diretory
+    # get working diretory where the .NZB file is located, which is the current directory of this script
     working_dir = os.getcwd()
     nzb_file = os.path.join(working_dir, nzb_name)
     if not os.path.isfile(nzb_file):
@@ -231,7 +231,7 @@ def download_and_get_speed(servername, connections, pipelining, nzb_name):
         sys.exit(1)
     add_NZB(nzb_file)
 
-     # wait until it starts downloading. But take some time due to pre-checking.
+     # wait until it starts downloading. But take some time due to pre-checking (if on)
     print("Waiting for download to start", end="", flush=True)
     while True:
          mbleft = get_mbleft()
@@ -281,7 +281,7 @@ def get_internet_speed():
         'calculate_performance': 1
     }
     data = generic_api_request(params, timeout=15)
-    print(f"Status Data: {data}", flush=True)
+    #print(f"Status Data: {data}", flush=True)
     if data and "status" in data and "internetbandwidth" in data["status"]:
         return data["status"]["internetbandwidth"]
     return None
@@ -309,12 +309,7 @@ if __name__ == "__main__":
         print(f"Download in queue, size {mbleft} MB. Please wait for it to finish before running the benchmark.")
         sys.exit(1)
 
-    internetspeed = get_internet_speed()
-    if internetspeed is not None:
-        print(f"Internet speed: {internetspeed} MB/s")
-    else:
-        print("Could not fetch internet speed.")
-        sys.exit(1)
+
 
     enabled_servers = get_enabled_servers()
     if len(enabled_servers) == 0:
@@ -329,13 +324,18 @@ if __name__ == "__main__":
     print(f"Ping time to server {servername}: {ping_time} ms")
     print(f"Using NZB file: {nzb_name}")
 
-    # sys.exit(0) # comment this out to run the benchmark, for now we just want to check if everything is set up correctly
+    print("Checking internet speed...", flush=True)
+    internetspeed = get_internet_speed()
+    if internetspeed is not None:
+        print(f"Internet speed: {internetspeed} MB/s")
+    else:
+        print("Could not fetch internet speed.")
+        sys.exit(1)
 
+ 
     print("Starting benchmark...")
-    #sys.exit()
-
-    #OK, boilerplate done. Now the stuff we want to test:
-
+ 
+ 
     # set server settings
     connections_list = [5, 10, 20, 80]
     pipelining_list = [1, 2, 5, 10, 20]
@@ -348,4 +348,4 @@ if __name__ == "__main__":
             avg_speed = download_and_get_speed(servername, connections, pipelining, nzb_name)
             print(f"servername: {servername}, Connections {connections}, Pipelining {pipelining}: Average Speed: {avg_speed}")
 
-
+    print("\nBenchmark completed.")
