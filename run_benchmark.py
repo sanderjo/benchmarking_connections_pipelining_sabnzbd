@@ -338,7 +338,7 @@ if __name__ == "__main__":
  
     # set server settings
     # first test with connections = 20 and pipelining = 5, so we see speed early on.
-    connections_list = [20, 5, 10, 80]
+    connections_list = [20, 10, 5, 80]
     pipelining_list = [5, 1, 2, 10, 20]
 
     # connections = 22
