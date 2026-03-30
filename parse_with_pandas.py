@@ -48,6 +48,9 @@ with open(filename, 'r') as f:
             df.loc[connections, pipelining] = speed
 
 
-
+# set the index and columns to be in the order of connections_list and pipelining_list
+# sort index and columns
+df = df.sort_index()
+df = df.sort_index(axis=1)
 
 print(df)
