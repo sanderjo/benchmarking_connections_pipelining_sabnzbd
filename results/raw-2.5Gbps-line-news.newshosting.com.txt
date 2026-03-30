@@ -192,4 +192,4 @@ SABnzbd resumed successfully: {'status': True}
 NZB file added successfully: {'status': True, 'nzo_ids': ['SABnzbd_nzo_ee0g_ttf']}
 Waiting for download to start
 Download has started: MB left: 3488.07
-MB left: 3488.07   MB left: 3482.43   MB left: 3382.93   MB left: 3096.55   MB left: 2815.1   MB left: 2536.48   MB left: 2255.03   
+MB left: 3488.07   MB left: 3482.43   MB left: 3382.93   MB left: 3096.55   MB left: 2815.1   MB left: 2536.48   MB left: 2255.03   MB left: 1972.88   MB left: 1696.37   MB left: 1416.33   MB left: 1139.82   
