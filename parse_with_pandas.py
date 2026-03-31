@@ -3,17 +3,13 @@
 
 import pandas as pd
 
-#connections = [5, 10, 20, 80]
-#pipelining = [1, 2, 5, 10, 20]
-
-# Create a DataFrame with the specified index and columns
+# Create a DataFrame to hold the results, with connections as index and pipelining as columns
 df = pd.DataFrame()
-
 # Name the index and columns
 df.index.name = "Connections"
 df.columns.name = "Pipelining Articles"
 
-#df.loc[5, 10] = 333 # so handy!
+#df.loc[5, 10] = 333 # so easy to fill out!
 
 # filename is first argument
 import sys
@@ -31,15 +27,17 @@ with open(filename, 'r') as f:
         if "Using server:" in line or "Ping time" in line or "Internet speed" in line:
             print(line)
         if "Download has started" in line and not nzb_size_printed:
-            print("test NZB size (MB): " + line.split(" ")[-1].strip()) # print the size of the NZB file
+            nzb_size_mb = line.split(" ")[-1].strip()
+            nzb_size_gb = float(nzb_size_mb) / 1024
+            print(f"test NZB size (GB): {nzb_size_gb:.1f}")
             nzb_size_printed = True
             print("\n")
         
+        # the real benchmark results:
         if "Average Speed:" in line:
             # servername: news.iad.newshosting.com, Connections 10, Pipelining 2: Average Speed: 53.6
-            line = line.replace(",","").replace(":","")
+            line = line.replace(",","").replace(":","") # remove commas and colons to make splitting easier
             elements = line.split()
-            #print(elements)
             # ['servername', 'news.iad.newshosting.com', 'Connections', '10', 'Pipelining', '2', 'Average', 'Speed', '53.6']
             servername = elements[1]
             connections = int(elements[3])
@@ -47,8 +45,10 @@ with open(filename, 'r') as f:
             speed = float(elements[8])
             df.loc[connections, pipelining] = speed
 
+print("unsorted DataFrame:")
+print(df)
+print("\n")
 
-# set the index and columns to be in the order of connections_list and pipelining_list
 # sort index and columns
 df = df.sort_index()
 df = df.sort_index(axis=1)

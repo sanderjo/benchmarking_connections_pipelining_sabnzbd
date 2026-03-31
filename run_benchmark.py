@@ -320,8 +320,10 @@ if __name__ == "__main__":
         sys.exit(1)
     servername = enabled_servers[0]
     print(f"Using server: {servername}")
+
     ping_time = int(get_ping_time(servername))
     print(f"Ping time to server {servername}: {ping_time} ms")
+
     print(f"Using NZB file: {nzb_name}")
 
     print("Checking internet speed...", flush=True)
@@ -341,8 +343,6 @@ if __name__ == "__main__":
     connections_list = [20, 10, 5, 80]
     pipelining_list = [5, 1, 2, 10, 20]
 
-    # connections = 22
-    # pipelining = 5
     for connections in connections_list:
         for pipelining in pipelining_list:
             print(f"\nservername: {servername}, Connections {connections}, Pipelining {pipelining} ... starting")
