@@ -286,21 +286,11 @@ def get_internet_speed():
         return data["status"]["internetbandwidth"]
     return None
 
-# def get_ping_time(host):
-#     import subprocess
-#     try:
-#         output = subprocess.check_output(["ping", "-c", "4", host], universal_newlines=True)
-#         print(f"Ping output: {output}")
-#         match = re.search(r"time=(\d+\.\d+) ms", output)
-#         if match:
-#             return float(match.group(1))
-#     except Exception as e:
-#         print(f"Failed to ping {host}: {e}")
-#     return None
 
 if __name__ == "__main__":
     
 
+    # check if SABnzbd is reachable and API key is valid and queue is empty:
     mbleft = get_mbleft()
     if mbleft is None:
         print("Could not fetch queue information. Is SABnzbd reachable?")
@@ -308,8 +298,6 @@ if __name__ == "__main__":
     elif mbleft != 0.0:
         print(f"Download in queue, size {mbleft} MB. Please wait for it to finish before running the benchmark.")
         sys.exit(1)
-
-
 
     enabled_servers = get_enabled_servers()
     if len(enabled_servers) == 0:
