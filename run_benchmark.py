@@ -79,7 +79,7 @@ def get_enabled_servers():
     data = generic_api_request(params)
     if data:
         servers = data["config"]["servers"]
-        enabled_servers = [s['name'] for s in servers if s["enable"] == 1]
+        enabled_servers = [s['host'] for s in servers if s["enable"] == 1] # host, so we get the real server name, not the nickname
         return enabled_servers
     else:
         return None
@@ -306,6 +306,7 @@ if __name__ == "__main__":
     if len(enabled_servers) > 1:
         print("Multiple enabled servers found. Please disable all but one server before running the benchmark.")
         sys.exit(1)
+    print(f"SJ: enabled_servers: {enabled_servers}")
     servername = enabled_servers[0]
     print(f"Using server: {servername}")
 
