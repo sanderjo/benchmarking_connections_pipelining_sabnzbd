@@ -50,9 +50,9 @@ with open(filename, 'r') as f:
             speed = float(elements[8])
             df.loc[connections, pipelining] = speed
 
-print("unsorted DataFrame:")
-print(df)
-print("\n")
+#print("unsorted DataFrame:")
+#print(df)
+#print("\n")
 
 # sort index and columns
 df = df.sort_index()
