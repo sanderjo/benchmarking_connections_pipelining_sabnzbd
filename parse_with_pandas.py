@@ -28,8 +28,9 @@ with open(filename, 'r') as f:
             print(line)
         if "Internet speed" in line:
             # Internet speed: 299.49 MB/s
-            internet_speed = line.split(" ")[-2].strip()
-            print(f"Internet speed: {internet_speed} MB/s (about {float(internet_speed)*8.1/1024:.1f} Gbps)")
+            #internet_speed = line.split(" ")[-2].strip()
+            #print(f"Internet speed: {internet_speed} MB/s (about {float(internet_speed)*8.1/1024:.1f} Gbps)")
+            print(line)
         if "Download has started" in line and not nzb_size_printed:
             nzb_size_mb = line.split(" ")[-1].strip()
             nzb_size_gb = float(nzb_size_mb) / 1024
