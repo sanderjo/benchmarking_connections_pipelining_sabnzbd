@@ -306,7 +306,6 @@ if __name__ == "__main__":
     if len(enabled_servers) > 1:
         print("Multiple enabled servers found. Please disable all but one server before running the benchmark.")
         sys.exit(1)
-    print(f"SJ: enabled_servers: {enabled_servers}")
     servername = enabled_servers[0]
     print(f"Using server: {servername}")
 
