@@ -318,7 +318,7 @@ if __name__ == "__main__":
     print("Checking internet speed...", flush=True)
     internetspeed = get_internet_speed()
     if internetspeed is not None:
-        print(f"Internet speed: {internetspeed} MB/s")
+        print(f"Internet speed: {internetspeed} MB/s (about {float(internetspeed)*8.1/1024:.1f} Gbps)", flush=True)
     else:
         print("Could not fetch internet speed.")
         sys.exit(1)
